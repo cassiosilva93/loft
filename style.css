@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&family=Ubuntu:wght@300&display=swap');
+
+:root {
+  --color-white: #FFF;
+  --color-dark-gray: #888;
+  --color-light-gray: #AAA;
+  --color-7-gray: #777;
+  --color-5-gray: #555;
+
+  --color-bg-footer: #333;
+  --color-bg-card: #EEE;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Ropa Sans', sans-serif;
+}
+
+html {
+  /* a cada 1rem será considera 10px */
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100vh;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+header .container img {
+  width: 28px;
+  height: 12px;
+}
+
+header .container {
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo-container {
+  display: flex;
+  width: 120px;
+}
+
+header .logo-container h3 {
+  color: var(--color-7-gray);
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+header .logo-container p {
+  color: var(--color-light-gray);
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.container img {
+  width: 336px;
+  height: 447px;
+  margin-left: 20px
+}
+
+.description p {
+  text-align: justify;
+}
+
+/* --- */
+
+
+
+h2 {
+  color: rgb(75, 75, 75);
+  font-size: 3.6rem;
+  line-height: 4.6rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background-color: rgb(81, 202, 126);
+  margin: 15px 0px 0px;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 150ms linear 0s;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+section.initial-banner {
+  margin: 80px 0;
+}
+
+section.initial-banner .container {
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
+  display: flex;
+}
+
+section.initial-banner p {
+  color: var(--color-5-gray);
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  margin: 10px 0px 0px;
+}
+
+main {
+  margin-bottom: 80px;
+}
+
+.cards {
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.text--medium {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  color: var(--color-5-gray);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg-card);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+
+}
+
+.card:hover {
+  transform: translateY(-7px);
+}
+
+.image {
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+
+  overflow: hidden;
+  position: relative;
+}
+
+.image img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  margin: 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.info {
+  align-items: center;
+  text-align: center;
+}
+
+.price {
+  font-size: 18px;
+  margin-left: auto;
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: var(--color-white)
+}
+
+footer {
+  background-color: var(--color-bg-footer);
+  display: flex;
+  justify-content: space-between;
+  padding: 90px;
+}
+
+footer img {
+  width: 400px;
+  height: 310px;
+  border-radius: 5px;
+}
+
+footer .description {
+  max-width: 300px;
+}
+
+footer .social-info {
+  width: 300px;
+  height: 300px;
+}
